@@ -1,1 +1,0 @@
-{"headers": {"Content-Type": "application/json"}, "statusCode": 200, "body": "{\"message\": \"Lambda Container image invoked!\", \"random_number\": 148, \"event\": {}}"}

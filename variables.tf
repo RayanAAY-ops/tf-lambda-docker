@@ -49,3 +49,12 @@ variable "image_tag" {
   default     = "latest"
 }
 
+variable "sm_secret_name" {
+  type        = string
+  description = "secret name, no credentials"
+}
+
+variable "region_name" {
+  type        = string
+  description = "AWS Region"
+}

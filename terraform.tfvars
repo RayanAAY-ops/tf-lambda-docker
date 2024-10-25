@@ -1,3 +1,5 @@
 project_name   = "poc"
 domain_name    = "ecs-spinup"
 git_repository = "https://github.com/RayanAAY-ops/terraform-aws-lambda-docker"
+sm_secret_name = "cred-lambda-docker"
+region_name    = "eu-west-3"

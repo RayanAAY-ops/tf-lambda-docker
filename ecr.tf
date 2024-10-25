@@ -11,6 +11,13 @@ resource "null_resource" "docker_push" {
   provisioner "local-exec" {
     command = "bash push2ecr.sh"
   }
+  triggers = {
+    # This will ensure the Docker image is rebuilt if the source code changes
+    source_hash = sha1(join("", [
+      for f in fileset("${path.module}/app", "*") :
+      filebase64sha256("${path.module}/app/${f}")
+    ]))
+  }
 
   depends_on = [aws_ecr_repository.main]
 }

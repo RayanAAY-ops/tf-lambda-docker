@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    key                  = "terraform-aws-lambda-docker.tfstate"
+    key                  = "terraform-aws-lambda-docker2.tfstate"
     workspace_key_prefix = ""
     encrypt              = true
     region               = "eu-west-3"

@@ -7,5 +7,5 @@ provider "aws" {
       git_repository = var.git_repository
     }
   }
-  region = "eu-west-3"
+  region = var.region_name
 }
